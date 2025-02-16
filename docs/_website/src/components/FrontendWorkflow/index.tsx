@@ -1,9 +1,12 @@
-import React from "react";
+import React from "react"; // Import React for JSX support
 
-import Link from "@docusaurus/Link";
-import type { Props as LinkProps } from "@docusaurus/Link";
+import Link from "@docusaurus/Link"; // Import Link component from Docusaurus for navigation
+import type { Props as LinkProps } from "@docusaurus/Link"; // Import Link prop types
 
-import "./styles.css";
+import "./styles.css"; // Import component-specific styles
+
+// Define the props for FrontendWorkflow component.
+// Extends LinkProps by picking the "to" property and adds custom properties
 
 interface FrontendWorkflowProps extends Pick<LinkProps, "to"> {
   packageName: string;
